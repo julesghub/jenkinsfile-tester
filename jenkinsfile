@@ -16,7 +16,7 @@ pipeline {
     stage('Build docker') {
       steps {
         sh 'env'
-        sh 'docker build --force-rm --no-cache -t ${BNAME} .'
+        sh 'docker build --force-rm --no-cache -t ${INAME} .'
       }
     }
 
