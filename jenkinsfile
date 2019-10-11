@@ -49,7 +49,7 @@ pipeline {
     success {
       script {
         emailext (
-          subject: "Back to normal: ${currentBuild.fullDisplayName}",
+          subject: "Normal: ${currentBuild.fullDisplayName}",
           body: "Project is back to normal",
           // mimeType: 'text/html',
           to: 'house.of.barnie@gmail.com'
